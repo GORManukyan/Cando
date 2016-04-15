@@ -20,7 +20,7 @@ h6 {
     color: blue;
     -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(transparent, transparent),
-        url(../img/repeat1.jpg) repeat;
+        url(../img/repeat.jpg) repeat;
     background: -o-linear-gradient(transparent, transparent);
     -webkit-background-clip: text;
 } 
@@ -59,9 +59,9 @@ p {
     background-color: #222;
 }
 
-/*.text-faded {
+.text-faded {
     color: rgba(255,255,255,.7);
-}*/
+}
 
 section {
     padding: 100px 0;
@@ -74,11 +74,11 @@ aside {
 .no-padding {
     padding: 0;
 }
-
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*                     navbar when minim */
 .navbar-custom {
-    border-color: red;
-    font-family: Arial,sans-serif;
-    background-color: #000;
+    border-color: rgba(255,255,255,.3);
+    background-color: transparent;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -87,9 +87,9 @@ aside {
 /*8888888888888888888888888888888888888888888888888888888888888888888          when minimized <browse jobs> */
 .navbar-custom .navbar-header .navbar-brand {
     text-transform: uppercase;
-    font-family: Arial,sans-serif;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    color: #fff;
+    color: green;
 }
 /*888888888888888888888888888888888888888888888888888888888888888888888               navbar lis*/
 
@@ -124,6 +124,7 @@ aside {
 }
 
 
+/* 88888888888888888888888888888888888888888888888888888         register, about, login*/
 
 @media(min-width:768px) {
     .navbar-custom {
@@ -132,22 +133,22 @@ aside {
     }
 
     .navbar-custom .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
+        color: #E7D183;
     }
 
     .navbar-custom .navbar-header .navbar-brand:hover,
     .navbar-custom .navbar-header .navbar-brand:focus {
-        color: #000;
+        color: #fff;
     }
 
     .navbar-custom .nav > li>a,
     .navbar-custom .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
+        color: #175C54;
     }
 
     .navbar-custom .nav > li>a:hover,
     .navbar-custom .nav>li>a:focus:hover {
-        color: aqua;
+        color: #E7D183;
     }
 
     /*888888888888888888888888888888888888888888888888888888888888888    navbar background color*/
@@ -201,9 +202,9 @@ header .header-content {
 
 header .header-content .header-content-inner p {
     text-transform: uppercase;
-    font-family: Rage, Freestyle Script, Forte;
+    font-family: Verdana, Freestyle Script, Forte;
     color: #175C54;
-   -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
     background: -webkit-linear-gradient(transparent, transparent),
         url(../img/repeat.jpg) repeat;
     background: -o-linear-gradient(transparent, transparent);
@@ -462,8 +463,8 @@ fieldset[disabled] .btn-primary.active {
 
 ::selection {
     text-shadow: none;
-    color: #fff;
-    background: #222;
+    color: #000;
+    background: #fff;
 }
 
 img::selection {
@@ -475,4 +476,3 @@ img::-moz-selection {
     color: #fff;
     background: 0 0;
 }
-
